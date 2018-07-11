@@ -3,42 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.3.1.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <link rel="stylesheet" href="註冊.css">
+
 </head>
 <body>
-<form method="post" action="註冊.php">
-    <div class="form-group row justify-content-center">
-        <label class="col-md-2 col-form-label">ID</label>
-        <div class="col-md-5">
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="image/Yelp-Icon.ico" width="32" height="32" alt="">
+        toLife
+    </a>
+    <div>
+        <a class="navbar-brand nav_register" href="#">
+            <img src="image/baseline_face_white_48dp.png" width="24" height="24" alt="">
+            註冊
+        </a>
+        <a class="navbar-brand nav_register" href="#">
+            <img src="image/baseline_fingerprint_white_48dp.png" width="24" height="24" alt="">
+            登入
+        </a>
+    </div>
+
+</nav>
+
+<form method="post" action="註冊.php" class="container">
+    <div class="title_txt">
+        註冊
+    </div>
+    <HR>
+    <div class="pic d-none d-sm-block">
+        <img src="image/Placekitten480-g.jpg">
+    </div>
+    <div class="form-group offset-1">
+        <label class="col-form-label">ID</label>
+        <div class="col-sm-5">
             <input type="text" class="form-control" placeholder="ID">
         </div>
     </div>
-    <div class="form-group row justify-content-center">
-        <label class="col-md-2 col-form-label">Password</label>
-        <div class="col-md-5">
+    <div class="form-group offset-1">
+        <label class="col-form-label">Password</label>
+        <div class="col-sm-5">
             <input type="password" class="form-control" placeholder="Password">
         </div>
     </div>
-    <div class="form-group row justify-content-center">
-        <label class="col-md-2 col-form-label">Again Password</label>
-        <div class="col-md-5">
+    <div class="form-group offset-1">
+        <label class="col-form-label">Again Password</label>
+        <div class="col-sm-5">
             <input type="password" class="form-control" placeholder="Password">
         </div>
     </div>
-    <div class="form-group row justify-content-center">
-        <label class="col-md-2 col-form-label">Email</label>
-        <div class="col-md-5">
+    <div class="form-group offset-1">
+        <label class="col-form-label">Email</label>
+        <div class="col-sm-5">
             <input type="email" class="form-control" placeholder="Email">
         </div>
-    </div>
-    <div class="form-group row justify-content-center">
-        <div class="col-md-7">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+    </div><br>
+    <div class="form-group offset-1">
+        <div class="col-sm-5">
+            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+            <button type="submit" class="btn btn-warning btn-block">Cannel</button>
         </div>
     </div>
 </form>
+<footer class="card-footer container">
+    W3Schools的是學習，測試，培訓和優化。<br>
+    例子可能被簡化，以提高閱讀和基本的了解。教程，引用和例子都在不斷檢討，以避免錯誤，但我們不能保證所有內容的完整正確性。<br>
+    當使用這個網站，您同意已經閱讀並接受我們的使用條款， 餅乾和隱私政策。 版權所有1999至2018年通過的Refsnes數據。<br>
+    版權所有。技術W3.CSS。
+</footer>
+
 </body>
 </html>

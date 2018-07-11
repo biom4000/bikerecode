@@ -1,6 +1,32 @@
 body{
-    background: black;
+    background: #5b5b5b;
+}
+.col-form-label{
+    font-weight: bold;
+}
+.title_txt{
+    font-weight: bold;
+    font-size: 2em;
+}
+.nav_register{
+    font-size: 1em;
 }
 form{
+    margin: 60px 0 0 0;
+    padding: 30px 0;
     background: white;
+}
+.card-footer{
+    background: white;
+    height: 120px;
+    font-size: x-small;
+    padding: 30px 50px;
+    text-align: center;
+}
+.pic{
+    position: absolute;
+    left: 50%;
+    width: 35%;
+    height: 500px;
+    overflow:hidden;
 }
