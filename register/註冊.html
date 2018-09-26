@@ -34,38 +34,30 @@
         註冊
     </div>
     <HR>
-    <div class="pic d-none d-sm-block">
-        <img src="../image/Placekitten480-g.jpg">
-    </div>
-    <div class="form-group offset-1">
-        <label class="col-form-label">ID</label>
-        <div class="col-sm-5">
-            <input type="text" class="form-control" placeholder="ID">
+    <div class="row">
+        <div class="offset-1 col-sm-5" >
+            <div class="form-group">
+                <label class="col-form-label">ID</label>
+                <input type="text" class="form-control col-sm-10" placeholder="Email" name="email">
+            </div>
+            <div class="form-group">
+                <label class="col-form-label">Password</label>
+                <input type="password" class="form-control col-sm-10" placeholder="Password" name="password1">
+            </div>
+            <div class="form-group">
+                <label class="col-form-label">Again Password</label>
+                <input type="password" class="form-control col-sm-10" placeholder="Password" name="password2">
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="button" onclick="addUser()" class="btn btn-primary btn-block col-sm-10">Sign in</button>
+                <button type="submit" class="btn btn-warning btn-block col-sm-10">Cannel</button>
+            </div>
         </div>
-    </div>
-    <div class="form-group offset-1">
-        <label class="col-form-label">Password</label>
-        <div class="col-sm-5">
-            <input type="password" class="form-control" placeholder="Password">
+        <div class="pic d-none d-sm-block">
+            <img src="../image/Placekitten480-g.jpg">
         </div>
-    </div>
-    <div class="form-group offset-1">
-        <label class="col-form-label">Again Password</label>
-        <div class="col-sm-5">
-            <input type="password" class="form-control" placeholder="Password">
-        </div>
-    </div>
-    <div class="form-group offset-1">
-        <label class="col-form-label">Email</label>
-        <div class="col-sm-5">
-            <input type="email" class="form-control" placeholder="Email">
-        </div>
-    </div><br>
-    <div class="form-group offset-1">
-        <div class="col-sm-5">
-            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-            <button type="submit" class="btn btn-warning btn-block">Cannel</button>
-        </div>
+
     </div>
 </form>
 <footer class="card-footer container">
