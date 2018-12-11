@@ -11,9 +11,9 @@ body{
 .nav_register{
     font-size: 1em;
 }
-form{
-    margin: 60px 0 0 0;
-    padding: 30px 0;
+.display_from{
+    margin-top: 60px;
+    padding: 30px;
     background: white;
 }
 .card-footer{

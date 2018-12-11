@@ -8,6 +8,10 @@
     <script src="../jquery-3.3.1.min.js"></script>
     <script src="../bootstrap.min.js"></script>
     <link rel="stylesheet" href="登入.css">
+    <script src="登入.js"></script>
+    <link rel="stylesheet" href="../jq-confirm/jquery-confirm.min.css">
+    <script src="../jq-confirm/jquery-confirm.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 </head>
 <body>
@@ -29,7 +33,7 @@
 
 </nav>
 
-<form method="post" action="登入.php" class="container">
+<div class="container display_from">
     <div class="title_txt">
         登入
     </div>
@@ -43,26 +47,25 @@
             <div class="form-group offset-1">
                 <label class="col-form-label">ID</label>
                 <div class="col-sm-11">
-                    <input type="text" class="form-control" placeholder="ID" name="input_id">
+                    <input type="text" class="form-control" placeholder="ID" id="input_id">
                 </div>
             </div>
             <div class="form-group offset-1">
                 <label class="col-form-label">Password</label>
                 <div class="col-sm-11">
-                    <input type="password" class="form-control" placeholder="Password" name="input_password">
+                    <input type="password" class="form-control" placeholder="Password" id="input_password">
                 </div>
             </div>
             <br>
             <div class="form-group offset-1">
                 <div class="col-sm-11">
-                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                    <button type="reset" class="btn btn-warning btn-block">Cannel</button>
+                    <button class="btn btn-primary btn-block bt_submit">Sign in</button>
                 </div>
             </div>
         </div>
     </div>
 
-</form>
+</div>
 <footer class="card-footer container">
     W3Schools的是學習，測試，培訓和優化。<br>
     例子可能被簡化，以提高閱讀和基本的了解。教程，引用和例子都在不斷檢討，以避免錯誤，但我們不能保證所有內容的完整正確性。<br>

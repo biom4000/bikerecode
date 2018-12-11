@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="../bootstrap.min.css">
     <script src="../jquery-3.3.1.min.js"></script>
     <script src="../bootstrap.min.js"></script>
+    <script src="註冊.js"></script>
     <link rel="stylesheet" href="註冊.css">
+    <link rel="stylesheet" href="../jq-confirm/jquery-confirm.min.css">
+    <script src="../jq-confirm/jquery-confirm.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 </head>
 <body>
@@ -29,29 +33,28 @@
 
 </nav>
 
-<form method="post" action="註冊.php" class="container">
+<div class="container display_from"> <!--method="post" action="註冊.php">-->
     <div class="title_txt">
         註冊
     </div>
     <HR>
-    <div class="row">
+    <div class="d-sm-flex">
         <div class="offset-1 col-sm-5" >
             <div class="form-group">
                 <label class="col-form-label">ID</label>
-                <input type="text" class="form-control col-sm-10" placeholder="Email" name="email">
+                <input type="text" class="form-control col-sm-10" placeholder="Email" name="email" id="email">
             </div>
             <div class="form-group">
                 <label class="col-form-label">Password</label>
-                <input type="password" class="form-control col-sm-10" placeholder="Password" name="password1">
+                <input type="password" class="form-control col-sm-10" placeholder="Password" name="password1" id="password1">
             </div>
             <div class="form-group">
                 <label class="col-form-label">Again Password</label>
-                <input type="password" class="form-control col-sm-10" placeholder="Password" name="password2">
+                <input type="password" class="form-control col-sm-10" placeholder="Password" name="password2" id="password2">
             </div>
             <br>
             <div class="form-group">
-                <button type="button" onclick="addUser()" class="btn btn-primary btn-block col-sm-10">Sign in</button>
-                <button type="submit" class="btn btn-warning btn-block col-sm-10">Cannel</button>
+                <button class="btn btn-primary btn-block col-sm-10 bt_submit">Complete</button>
             </div>
         </div>
         <div class="pic d-none d-sm-block">
@@ -59,7 +62,7 @@
         </div>
 
     </div>
-</form>
+</div>
 <footer class="card-footer container">
     W3Schools的是學習，測試，培訓和優化。<br>
     例子可能被簡化，以提高閱讀和基本的了解。教程，引用和例子都在不斷檢討，以避免錯誤，但我們不能保證所有內容的完整正確性。<br>
